@@ -14,7 +14,7 @@ namespace ValidateEmail.Controllers
     public class EmailStatusController : ApiController
     {
         // GET: api/EmailStatus
-        public HttpResponseMessage Get()
+        public HttpResponseMessage Get(Account Account)
         {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
 
