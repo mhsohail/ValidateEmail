@@ -17,8 +17,9 @@ namespace ValidateEmail.Controllers
         public HttpResponseMessage Get(Account Account)
         {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
+            var email = Account.FirstName + "." + Account.LastName + "@" + Account.DomainName;
 
-            string serviceUrl = "https://bpi.briteverify.com/emails.json?address=sohailx2x@yahoo.com&apikey=2194f75a-34ac-49d5-97c8-e321e508e58f";
+            string serviceUrl = "https://bpi.briteverify.com/emails.json?address=" + email + "&apikey=2194f75a-34ac-49d5-97c8-e321e508e58f";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(serviceUrl);
             request.Method = "GET";
             request.ContentType = "application/json; charset=UTF-8";
