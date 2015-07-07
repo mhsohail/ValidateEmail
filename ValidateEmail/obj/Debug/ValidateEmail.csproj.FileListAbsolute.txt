@@ -61,3 +61,6 @@ c:\users\pc\documents\visual studio 2013\Projects\ValidateEmail\ValidateEmail\bi
 c:\users\pc\documents\visual studio 2013\Projects\ValidateEmail\ValidateEmail\obj\Debug\ValidateEmail.csprojResolveAssemblyReference.cache
 c:\users\pc\documents\visual studio 2013\Projects\ValidateEmail\ValidateEmail\obj\Debug\ValidateEmail.dll
 c:\users\pc\documents\visual studio 2013\Projects\ValidateEmail\ValidateEmail\obj\Debug\ValidateEmail.pdb
+C:\Users\pc\Documents\Visual Studio 2013\Projects\ValidateEmail\ValidateEmail\bin\System.Web.Cors.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\ValidateEmail\ValidateEmail\bin\System.Web.Http.Cors.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\ValidateEmail\ValidateEmail\bin\System.Web.Http.Cors.xml
