@@ -12,7 +12,7 @@ using ValidateEmail.Models;
 
 namespace ValidateEmail.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    [EnableCors(origins: "chrome-extension://nakkedmlflejnoifdhdfcalphdmogddm", headers: "*", methods: "get")]
     public class EmailStatusController : ApiController
     {
         // GET: api/EmailStatus
@@ -24,7 +24,7 @@ namespace ValidateEmail.Controllers
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(serviceUrl);
             request.Method = "GET";
             request.Accept = "application/json; charset=UTF-8";
-
+            
             var httpResponse = (HttpWebResponse)request.GetResponse();
             EmailStatus EmailStatus = null;
             string rt = string.Empty;
@@ -47,8 +47,9 @@ namespace ValidateEmail.Controllers
         }
 
         // POST: api/EmailStatus
-        public void Post([FromBody]string value)
+        public void Post(Account Account)
         {
+            var rrr = Request.Headers.GetValues("Origin");   
         }
 
         // PUT: api/EmailStatus/5
