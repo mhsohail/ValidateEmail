@@ -12,7 +12,7 @@ using ValidateEmail.Models;
 
 namespace ValidateEmail.Controllers
 {
-    [EnableCors(origins: "chrome-extension://nakkedmlflejnoifdhdfcalphdmogddm", headers: "*", methods: "get")]
+    [EnableCors(origins: "chrome-extension://gimpkgjdnjbgalhimgclmlfnlempoomf", headers: "*", methods: "get")]
     public class EmailStatusController : ApiController
     {
         // GET: api/EmailStatus
